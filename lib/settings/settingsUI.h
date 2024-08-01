@@ -27,17 +27,17 @@ void build(sets::Builder& b) {
                 restart();
             }
 
-            if (b.Button(buttons::saveRestart, "Save & Restart")){
+            /*if (b.Button(buttons::saveRestart, "Save & Restart")){
                 db.update();
                 restart();
-            }
+            }*/
             b.endMenu();
         }
 
 
         if (b.beginMenu("Relay configuration")){
             b.Switch(keys::relayInvertMode, "Relay invert mode");
-            b.Switch(keys::saveRelayStatus, "Save realy status");
+            b.Switch(keys::saveRelayStatus, "Save relay status");
             
             if (b.Button(buttons::save, "Save")){
                 db.update();

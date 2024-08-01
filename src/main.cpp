@@ -12,7 +12,7 @@ GyverDBFile db(&LittleFS, "/data.db");
 SettingsESP sett("ESP configuration", &db);
 ESPRelay Relay1;
 
-String sw_version = "0.7.0";
+String sw_version = "0.7.1";
 String releaseDate = "01.08.2024";
 
 #define WIFIAPTIMER 180000

@@ -10,7 +10,7 @@
 #include <homekit/characteristics.h>
 
 
-#define FIRMWARE_VERSION "0.7.0"
+#define FIRMWARE_VERSION "0.7.1"
 
 void my_accessory_identify(homekit_value_t _value) {
 	printf("accessory identify\n");
